@@ -17,7 +17,7 @@ if __name__ == '__main__':
     freeze_support()
     for s in range(model_num):
         # fix random seed
-        seed_number = 5
+        seed_number = s
         random.seed(seed_number)
         np.random.seed(seed_number)
         torch.manual_seed(seed_number)
